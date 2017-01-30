@@ -15,12 +15,12 @@
   },
   "class": {
     "name": "Warlock",
-    "level": 1
+    "level": 2
   },
-  "health": {"current": 8, "total": 8},
+  "health": {"current": 14, "total": 14},
   "armorClass": 16,
   "initiative": 2,
-  "baseAttackBonus": 0,
+  "baseAttackBonus": 1,
   "stats": {
     "strength": {"score": 18, "mod": 4},
     "dexterity": {"score": 15, "mod": 2},
@@ -32,7 +32,7 @@
   "saves": {
     "fort": {"base": 0, "mod": 2},
     "reflex": {"base": 0, "mod": 2},
-    "will": {"base": 2, "mod": 0}
+    "will": {"base": 3, "mod": 0}
   },
   "invocations": [
     {
@@ -42,12 +42,28 @@
       "range": 60
     },
     {
+      "name": "Eldritch Glaive",
+      "type": "least shape",
+      "damage": "1d6",
+      "critical": 2,
+      "range": 10,
+      "ref" : {
+        "book": "Dragon Magic",
+        "page": 82
+      }
+    },
+    {
       "name": "Baleful Utterance",
       "type": "least",
       "note": "Speak the word of dark speech to Shatter at will"
     }
   ],
-  "abilities": [],
+  "abilities": [
+    {
+      "name": "Detect Magic",
+      "note": "Use Detect Magic at will. Caster level equal to class level"
+    }
+  ],
   "skills": [
     {
       "name": "Knowledge - arcana",
@@ -69,13 +85,13 @@
     },
     {
       "name": "Spellcraft",
-      "rank": 4,
+      "rank": 5,
       "class": true,
       "mod": 1
     },
     {
       "name": "Use Magic Device",
-      "rank": 4,
+      "rank": 5,
       "class": true,
       "mod": 1
     }
@@ -88,7 +104,6 @@
         "book": "Book of Vile Darkness",
         "page": 49
       }
-
     },
     {
       "name": "Point Blank Shot",
