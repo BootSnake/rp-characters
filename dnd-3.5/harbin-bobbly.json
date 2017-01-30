@@ -1,0 +1,160 @@
+{
+  "player": "Ryan Muncy",
+  "name": "Harbin Bobbly",
+  "bio": {
+    "race": "human",
+    "size": "medium",
+    "height": [5, 8],
+    "weight": 168,
+    "age": 17,
+    "gender": "male",
+    "speed": 30,
+    "languages": ["Common", "Abyssal"],
+    "alignment": "Chaotic Neutral",
+    "diety": ""
+  },
+  "class": {
+    "name": "Warlock",
+    "level": 1
+  },
+  "health": {"current": 14, "total": 14},
+  "armorClass": 16,
+  "initiative": 2,
+  "baseAttackBonus": 0,
+  "stats": {
+    "strength": {"score": 18, "mod": 3},
+    "dexterity": {"score": 15, "mod": 2},
+    "constitution": {"score": 15, "mod": 0},
+    "intelligence": {"score": 8, "mod": -1},
+    "wisdom": {"score": 8, "mod": -1},
+    "charisma": {"score": 7, "mod": -2}
+  },
+  "saves": {
+    "fort": {"base": 0, "mod": 2},
+    "reflex": {"base": 0, "mod": 2},
+    "will": {"base": 2, "mod": 0}
+  },
+  "invocations": [
+    {
+      "name": "Eldritch Blast",
+      "damage": "1d6",
+      "critical": 2,
+      "range": 60
+    },
+    {
+      "name": "Baleful Utterance",
+      "type": "least",
+      "note": "Speak the word of dark speech to Shatter at will"
+    }
+  ],
+  "abilities": [],
+  "skills": [
+    {
+      "name": "Knowledge - arcana",
+      "rank": 4,
+      "class": true,
+      "mod": 1
+    },
+    {
+      "name": "Knowledge - the planes",
+      "rank": 2,
+      "class": true,
+      "mod": 1
+    },
+    {
+      "name": "Knowledge - religion",
+      "rank": 2,
+      "class": true,
+      "mod": 1
+    },
+    {
+      "name": "Spellcraft",
+      "rank": 4,
+      "class": true,
+      "mod": 1
+    },
+    {
+      "name": "Use Magic Device",
+      "rank": 4,
+      "class": true,
+      "mod": 1
+    }
+  ],
+  "feats": [
+    {
+      "name": "Mortalbane",
+      "note": "A mortalbane ability is a damaging spell-like ability that deals 2d6 points of additional damage when used against living nonoutsiders",
+      "ref" : {
+        "book": "Book of Vile Darkness",
+        "page": 49
+      }
+
+    },
+    {
+      "name": "Point Blank Shot",
+      "note": "You get a +1 bonus on attack and damage rolls with ranged weapons at ranges of up to 30 feet."
+    }
+  ],
+  "inventory": [
+    {
+      "name": "Wand of Entangle",
+      "casterLevel": 1,
+      "weight": 1,
+    },
+    {
+      "name": "Wand of Cure Lesser Wounds",
+      "casterLevel": 1,
+      "weight": 1,
+    },
+    {
+      "name": "Quaterstaff",
+      "damage": "1d6",
+      "critical": 2,
+      "type": "bludgeoning",
+      "weight": 4,
+    },
+    {
+      "name": "Dagger",
+      "damage": "1d4",
+      "critical": 2,
+      "criticalRange": 19,
+      "type": "slashing or peircing",
+      "weight": 1
+    },
+    {
+      "name": "Studded Leather",
+      "armorBonus": 3,
+      "maxDexMod": 5,
+      "armorPenalty": -1,
+      "spellFail": 15,
+      "speedReduction": 0,
+      "weight": 20
+    },
+    {
+      "name": "Ring of Protection +1",
+      "acBonus": 1,
+      "weight": 0
+    },
+    {"name": "Backpack", "weight": 2},
+    {"name": "Winter Blanket","weight": 3},
+    {"name": "Bedroll", "weight": 5},
+    {"name": "Flint & Steel", "weight": 0},
+    {"name": "Hempen Rope", "weight": 20, "quantity": 100},
+    {"name": "Pint of Oil", "weight": 2, "quantity": 2},
+    {"name": "Oil Lamp", "weight": 1},
+    {"name": "Torch", "weight": 3, "quantity": 3},
+    {"name": "Chalk", "weight": 0},
+    {"name": "Waterskin", "weight": 4},
+    {"name": "Rations", "weight": 3, "quantity":3},
+    {"name": "Travel Outfit", "weight": 5},
+    {"name": "Fur Cloak", "weight": 5},
+    {"name": "Twine", "weight": 0, "quantity": 50},
+    {"name": "Bolt Cutters", "weight": 5},
+    {"name": "Metal Tongs", "weight": 4},
+    {"name": "Small Magnet", "weight": 1},
+    {"name": "Insectbane Candles", "weight": 0, "quantity": 5},
+    {"name": "Collapsable Grappling Hook", "weight": 2},
+    {"name": "Small Hand Mirror", "weight": 0},
+  ]
+
+}
