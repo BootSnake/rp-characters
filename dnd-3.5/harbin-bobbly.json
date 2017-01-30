@@ -11,7 +11,7 @@
     "speed": 30,
     "languages": ["Common", "Abyssal"],
     "alignment": "Chaotic Neutral",
-    "diety": ""
+    "diety": "Nerull"
   },
   "class": {
     "name": "Warlock",
