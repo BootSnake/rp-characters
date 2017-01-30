@@ -17,17 +17,17 @@
     "name": "Warlock",
     "level": 1
   },
-  "health": {"current": 14, "total": 14},
+  "health": {"current": 8, "total": 8},
   "armorClass": 16,
   "initiative": 2,
   "baseAttackBonus": 0,
   "stats": {
-    "strength": {"score": 18, "mod": 3},
+    "strength": {"score": 18, "mod": 4},
     "dexterity": {"score": 15, "mod": 2},
-    "constitution": {"score": 15, "mod": 0},
-    "intelligence": {"score": 8, "mod": -1},
-    "wisdom": {"score": 8, "mod": -1},
-    "charisma": {"score": 7, "mod": -2}
+    "constitution": {"score": 15, "mod": 2},
+    "intelligence": {"score": 12, "mod": 1},
+    "wisdom": {"score": 11, "mod": 0},
+    "charisma": {"score": 12, "mod": 1}
   },
   "saves": {
     "fort": {"base": 0, "mod": 2},
@@ -156,5 +156,4 @@
     {"name": "Collapsable Grappling Hook", "weight": 2},
     {"name": "Small Hand Mirror", "weight": 0},
   ]
-
 }
