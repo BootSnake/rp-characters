@@ -27,6 +27,7 @@
     }
   }
   ],
+  "experience": 3300,
   "health": {"current": 21, "total": 21},
   "armorClass": 15,
   "initiative": 1,
@@ -40,9 +41,9 @@
     "charisma": {"score": 15, "mod": 2}
   },
   "saves": {
-    "fort": {"base": 2, "mod": 2},
-    "reflex": {"base": 0, "mod": 1},
-    "will": {"base": 5, "mod": 4}
+    "fort": {"base": 2, "mod": "con"},
+    "reflex": {"base": 0, "mod": "dex"},
+    "will": {"base": 5, "mod": "wis"}
   },
   "invocations": [
     {
@@ -71,8 +72,8 @@
   "spells": [
     {
       "ref": "http://alcyius.com/dndtools/classes/cleric/spells-level-0/index.html",
-      "level0": "3/day",
-      "level1": "2/day + 1 domain spell"
+      "level0": ["3/day", "cure", "cure", "message"],
+      "level1": ["2/day + 1 domain spell", "", "", "Cause Fear - Domain"]
     }
   ],
   "abilities": [
@@ -85,8 +86,18 @@
       "notes" : "Thanks to long hours of study, a cloistered cleric has a wide range of stray knowledge. This ability is identical to the bard's bardic knowledge class feature, using the cloistered cleric's class level in place of the bard level."
     },
     {
+      "name": "Domain - Death",
+      "notes": [
+        "Death Touch 1/day 1d6*cleric level >= livingcreature HP, it dies"
+      ]
+
+    }
+    {
       "name": "Rebuke Undead",
-      "notes": "3+cha/day"
+      "notes": [
+        "3+cha/day",
+        "d20+cha"
+      ]
     }
   ],
   "skills": [
@@ -94,7 +105,7 @@
       "name": "Concentration",
       "rank": 0,
       "class": true,
-      "mod": "INT"
+      "mod": "con"
     },
     {
       "name": "Craft",
@@ -106,50 +117,50 @@
       "name": "Diplomacy",
       "rank": 0,
       "class": true,
-      "mod": 1
+      "mod": "cha"
     },
     {
       "name": "Move Silently",
       "rank": 0,
       "bonus": 2,
       "class": false,
-      "mod": 2
+      "mod": "dex"
     },
     {
       "name": "Knowledge - arcana",
       "rank": 2,
       "class": true,
-      "mod": 1
+      "mod": "int"
     },
     {
       "name": "Knowledge - the planes",
       "rank": 4,
       "class": true,
-      "mod": 1
+      "mod": "int"
     },
     {
       "name": "Knowledge - religion",
       "rank": 4,
       "class": true,
-      "mod": 1
+      "mod": "int"
     },
     {
       "name": "Knowledge - history",
       "rank": 0,
       "class": true,
-      "mod": 1
+      "mod": "int"
     },
     {
       "name": "Spellcraft",
       "rank": 6,
       "class": true,
-      "mod": 1
+      "mod": "int"
     },
     {
       "name": "Use Magic Device",
       "rank": 6,
       "class": true,
-      "mod": 1
+      "mod": "int"
     }
   ],
   "feats": [
@@ -176,13 +187,6 @@
       "name": "Wand of Cure Lesser Wounds",
       "casterLevel": 1,
       "weight": 1,
-    },
-    {
-      "name": "Quaterstaff",
-      "damage": "1d6",
-      "critical": 2,
-      "type": "bludgeoning",
-      "weight": 4,
     },
     {
       "name": "Dagger",
