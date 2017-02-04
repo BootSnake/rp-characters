@@ -11,28 +11,38 @@
     "speed": 30,
     "languages": ["Common", "Abyssal"],
     "alignment": "Chaotic Neutral",
-    "diety": "Nerull"
+    "diety": "Demon Lord Graz'zt"
   },
-  "class": {
+  "class": [
+    {
     "name": "Warlock",
     "level": 2
   },
-  "health": {"current": 14, "total": 14},
-  "armorClass": 16,
-  "initiative": 2,
+  {
+    "name": "Cloistered Cleric",
+    "level": 1,
+    "ref" : {
+      "book": "Unearthed Arcana",
+      "page": 50
+    }
+  }
+  ],
+  "health": {"current": 21, "total": 21},
+  "armorClass": 15,
+  "initiative": 1,
   "baseAttackBonus": 1,
   "stats": {
-    "strength": {"score": 18, "mod": 4},
-    "dexterity": {"score": 15, "mod": 2},
+    "strength": {"score": 11, "mod": 0},
+    "dexterity": {"score": 12, "mod": 1},
     "constitution": {"score": 15, "mod": 2},
     "intelligence": {"score": 12, "mod": 1},
-    "wisdom": {"score": 11, "mod": 0},
-    "charisma": {"score": 12, "mod": 1}
+    "wisdom": {"score": 18, "mod": 4},
+    "charisma": {"score": 15, "mod": 2}
   },
   "saves": {
-    "fort": {"base": 0, "mod": 2},
-    "reflex": {"base": 0, "mod": 2},
-    "will": {"base": 3, "mod": 0}
+    "fort": {"base": 2, "mod": 2},
+    "reflex": {"base": 0, "mod": 1},
+    "will": {"base": 5, "mod": 4}
   },
   "invocations": [
     {
@@ -55,43 +65,89 @@
     {
       "name": "Baleful Utterance",
       "type": "least",
-      "note": "Speak the word of dark speech to Shatter at will"
+      "notes": "Speak the word of dark speech to Shatter at will"
+    }
+  ],
+  "spells": [
+    {
+      "ref": "http://alcyius.com/dndtools/classes/cleric/spells-level-0/index.html",
+      "level0": "3/day",
+      "level1": "2/day + 1 domain spell"
     }
   ],
   "abilities": [
     {
       "name": "Detect Magic",
-      "note": "Use Detect Magic at will. Caster level equal to class level"
+      "notes": "Use Detect Magic at will. Caster level equal to class level"
+    },
+    {
+      "name": "Lore",
+      "notes" : "Thanks to long hours of study, a cloistered cleric has a wide range of stray knowledge. This ability is identical to the bard's bardic knowledge class feature, using the cloistered cleric's class level in place of the bard level."
+    },
+    {
+      "name": "Rebuke Undead",
+      "notes": "3+cha/day"
     }
   ],
   "skills": [
     {
+      "name": "Concentration",
+      "rank": 0,
+      "class": true,
+      "mod": "INT"
+    },
+    {
+      "name": "Craft",
+      "rank": 0,
+      "class": true,
+      "mod": 1
+    },
+    {
+      "name": "Diplomacy",
+      "rank": 0,
+      "class": true,
+      "mod": 1
+    },
+    {
+      "name": "Move Silently",
+      "rank": 0,
+      "bonus": 2,
+      "class": false,
+      "mod": 2
+    },
+    {
       "name": "Knowledge - arcana",
-      "rank": 4,
+      "rank": 2,
       "class": true,
       "mod": 1
     },
     {
       "name": "Knowledge - the planes",
-      "rank": 2,
+      "rank": 4,
       "class": true,
       "mod": 1
     },
     {
       "name": "Knowledge - religion",
-      "rank": 2,
+      "rank": 4,
+      "class": true,
+      "mod": 1
+    },
+    {
+      "name": "Knowledge - history",
+      "rank": 0,
       "class": true,
       "mod": 1
     },
     {
       "name": "Spellcraft",
-      "rank": 5,
+      "rank": 6,
       "class": true,
       "mod": 1
     },
     {
       "name": "Use Magic Device",
-      "rank": 5,
+      "rank": 6,
       "class": true,
       "mod": 1
     }
@@ -170,5 +226,6 @@
     {"name": "Insectbane Candles", "weight": 0, "quantity": 5},
     {"name": "Collapsable Grappling Hook", "weight": 2},
     {"name": "Small Hand Mirror", "weight": 0},
+    {"name": "Mount - Horse"}
   ]
 }
